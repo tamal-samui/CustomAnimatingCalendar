@@ -11,7 +11,7 @@ The <b>Calendar</b> is drawn on the onDraw() method of a View and completely cus
 To draw the background of each calendar cell you can uncomment all the commented code related to "cellPaint" in the CustomCalendar class.
 
 <br/><br/>
-<img height="450" src="https://github.com/tamalsamui/CustomAnimatingCalendar/blob/master/pics/SlidingView.gif" />
+<img height="450" src="https://github.com/tamalsamui/CustomAnimatingCalendar/blob/master/pics/screen_capture.gif" />
 <br/>
 
 ## License
