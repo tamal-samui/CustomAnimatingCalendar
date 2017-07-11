@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <include android:id="@+id/action_bar1" layout="@layout/action_bar_layout"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/action_bar1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <include
+                    android:id="@+id/calendar_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/calendar_header" />
+
+                <com.tamalsamui.animatingcalendar.custom.views.CustomCalendar
+                    android:id="@+id/custom_calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/calendar_head"
+                    android:padding="10dp"
+                    />
+
+            <LinearLayout
+                android:id="@+id/list_layout"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:background="#fff"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ListView
+                    android:id="@+id/day_list"
+                    android:divider="#0000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></ListView>
+            </LinearLayout>
+        </RelativeLayout>
+
+</RelativeLayout>
